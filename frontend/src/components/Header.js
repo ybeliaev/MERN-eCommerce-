@@ -1,9 +1,27 @@
 import React from 'react'
 
+import { Container, Navbar, Nav } from 'react-bootstrap'
+
 const Header = () => {
     return (
         <header>
-            header
+            <Navbar bg="dark" variant="dark" collapseOnSelect>
+                <Container>
+                    <Navbar.Brand href="/">ECommerceShop</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Collapse id="navbarScroll">
+                        <Nav className="ms-auto">
+                            <Nav.Link href="/cart">
+                                <i className="fas fa-shopping-cart"></i>Cart
+                            </Nav.Link>
+                            <Nav.Link href="/login">
+                                <i className="fas fa-user"></i>Login
+                            </Nav.Link>
+                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </header>
     )
 }
