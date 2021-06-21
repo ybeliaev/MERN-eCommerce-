@@ -29,8 +29,4 @@ const Product = ({ product }) => {
     )
 }
 
-Raiting.defaultProps = {
-    color: '#f8e825',
-}
-
 export default Product
