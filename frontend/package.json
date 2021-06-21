@@ -31,17 +31,17 @@
             "react-app/jest"
         ]
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
     "browserslist": {
         "production": [
             ">0.2%",
             "not dead",
             "not op_mini all"
         ],
-        "husky": {
-            "hooks": {
-                "pre-commit": "lint-staged"
-            }
-        },
         "development": [
             "last 1 chrome version",
             "last 1 firefox version",
