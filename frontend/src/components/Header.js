@@ -17,7 +17,9 @@ const Header = () => {
                             <Nav.Link href="/login">
                                 <i className="fas fa-user"></i>Login
                             </Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <Nav.Link href="#pricing">
+                                <i className="fas fa-phone-volume"></i>Contacts
+                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
