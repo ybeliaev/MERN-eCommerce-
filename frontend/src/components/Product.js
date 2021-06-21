@@ -1,6 +1,8 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 
+import Raiting from '../components/Raiting'
+
 const Product = ({ product }) => {
     return (
         <Card className="my-3 p-3 rounded">
@@ -15,13 +17,20 @@ const Product = ({ product }) => {
                 </a>
 
                 <Card.Text as="div">
-                    <div>{product.rating}</div>
+                    <Raiting
+                        value={product.rating}
+                        text={`${product.numReviews} reviews`}
+                    />
                 </Card.Text>
 
                 <Card.Text as="h3">${product.price}</Card.Text>
             </Card.Body>
         </Card>
     )
+}
+
+Raiting.defaultProps = {
+    color: '#f8e825',
 }
 
 export default Product
