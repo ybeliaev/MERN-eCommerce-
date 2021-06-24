@@ -2,12 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 
-import Raiting from '../components/Raiting'
+import Rating from '../components/Rating'
 import products from '../products'
 
-const ProductScreen = (props) => {
-    const product = products.find((p) => p._id === props.match.params.id)
-    console.log('props from props ProductScreen: ', props)
+const ProductScreen = ({ match }) => {
+    const product = products.find((p) => p._id === match.params.id)
     return (
         <>
             <Link className="btn btn-light my-3" to="/">
@@ -23,7 +22,7 @@ const ProductScreen = (props) => {
                             <h3>{product.name}</h3>
                         </ListGroup.Item>
                         <ListGroup.Item>
-                            <Raiting
+                            <Rating
                                 value={product.value}
                                 text={`${product.numReviews} rewiews`}
                             />
