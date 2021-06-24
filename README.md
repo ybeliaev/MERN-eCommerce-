@@ -6,3 +6,8 @@ I use react-bootstrap and free theme Lex https://bootswatch.com/
 
 > -   `react-router-bootstrap`
 > -   `react-router-dom`
+
+## Backend
+
+-   `app.listen(5000, console.log('Server running..'))`
+-   `node backend/server`
