@@ -11,5 +11,8 @@
     "bugs": {
         "url": "https://github.com/ybeliaev/mern-ecommerce/issues"
     },
-    "homepage": "https://github.com/ybeliaev/mern-ecommerce#readme"
+    "homepage": "https://github.com/ybeliaev/mern-ecommerce#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
 }
