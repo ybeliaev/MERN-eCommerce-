@@ -6,8 +6,6 @@ const products = require('./data/products')
 // import dotenv from 'dotenv'
 // import products from './data/products'
 
-console.log(products)
-
 dotenv.config()
 
 const app = express()
