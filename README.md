@@ -7,8 +7,6 @@ I use react-bootstrap and free theme Lex https://bootswatch.com/
 > -   `react-router-bootstrap`
 > -   `react-router-dom`
 
-## Make Backend
+## Run app
 
--   `app.listen(5000, console.log('Server running..'))`
--   `node backend/server`
--   `"proxy": "http://127.0.0.1:5555"` to package.json
+`npm run server`
